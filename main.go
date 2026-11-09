@@ -7,4 +7,4 @@ func main() {
 	fmt.Print(nums)
 	var mystring = "Hello my name is Raghav"
 	fmt.Print(mystring)
-} //h
+}
