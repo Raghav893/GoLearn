@@ -36,7 +36,12 @@ func main() {
 
 	getName()
 
-	bet := getBet(balance)
-	fmt.Println(bet)
-
+	for balance > 0 {
+		bet := getBet(balance)
+		if bet == 0 {
+			break
+		}
+		balance -= bet
+		fmt.Printf("Your balance is %d \n", balance)
+	}
 }
